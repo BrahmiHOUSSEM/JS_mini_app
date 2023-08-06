@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java-Script</title>
+    <script>
+        let str = 'Hello !@#$%^Online &&Web *& Tutor?. Tutor Tutor Hello Hello Hello';
+
+        let result ={}
+
+        str = str.replace(/[^a-zA-Z0-9 ]/g, '')
+
+        str = str.toLowerCase().split(' ')
+
+
+            for(let i of str){
+                if(i !== '') {
+                    if(result[i]){ 
+                    result[i]++
+                }
+                else{
+                    result[i] = 1
+                }
+                }
+            }
+
+        console.log(result)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
