@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java-Script</title>
+    <script>
+        class book {
+            constructor(name,number) {
+                this.name = name
+                this.number_of_pages = number
+                this.page = 1
+            }
+
+            get next_page() {
+                return this.page++
+            }
+
+            get reset_page() {
+                return this.page = 1
+            }
+        }
+
+        const b = new book("kalilawadimna",300)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
