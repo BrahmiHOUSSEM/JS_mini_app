@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java-Script</title>
+    <script>
+        class rectangle {
+            constructor(width,height){
+                this.width = width
+                this.height = height
+            }
+
+            get perimeter() {
+                return this.width * 2 + this.height * 2
+            }
+
+            get isValid() {
+                return width > 0  && height > 0
+            }
+        }
+
+        class square extends rectangle {
+            constructor(width){
+                super(width,width)
+            }
+
+        }
+
+        const r1 = new square(20)
+
+        console.log(r1.perimeter)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

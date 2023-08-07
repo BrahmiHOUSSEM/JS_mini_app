@@ -9,6 +9,8 @@
 
         let result ={}
 
+        let resultT = []
+
         str = str.replace(/[^a-zA-Z0-9 ]/g, '')
 
         str = str.toLowerCase().split(' ')
@@ -24,8 +26,16 @@
                 }
                 }
             }
+        
+        for(let i in result){
+            resultT.push({
+                word : i,
+                count:result[i]
+            })
+        }
 
-        console.log(result)
+        resultT.sort((a,b) => b.count - a.count)
+        console.log(resultT)
 
     </script>
 </head>
