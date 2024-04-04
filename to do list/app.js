@@ -7,7 +7,6 @@ function addTask() {
 
     if (input.value != '') {
         const taskHolder = document.createElement('div')
-        const task = document.createElement('p')
 
         taskHolder.innerHTML = `
             <div>
@@ -34,4 +33,9 @@ function addTask() {
     }
 }
 
-
+function entrerPress(press) {
+    if (press.key === 'Enter') {
+        addTask() 
+    }
+}
+document.addEventListener('keydown',entrerPress)
